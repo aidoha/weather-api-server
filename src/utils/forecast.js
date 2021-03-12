@@ -15,7 +15,9 @@ const forecast = (latitude, longitude, callback) => {
         undefined,
         `${body.current.weather_descriptions.map((x) => x)} It's currently ${
           body.current.temperature
-        } degrees out. Feels like ${body.current.feelslike}`
+        } degrees out. Feels like ${
+          body.current.feelslike
+        }. The observation time is ${body.current.observation_time}`
       );
     }
   });
